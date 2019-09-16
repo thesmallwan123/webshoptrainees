@@ -1,0 +1,41 @@
+$colorText  : black;
+$colorHover : blue;
+$mainColor1 : #00a1de;
+$explaintxt : #b2b2b2;
+$padding    :   20px;
+$margin     :   20px;
+
+.nav-bar{
+    padding-top: 1px;
+    color: $colorText;
+    min-height: 50px;
+    background-color: $mainColor1;
+    margin-bottom: $margin;
+    .nav-left{
+        float: left;
+        margin-left: $margin;
+    }
+    .nav-right{
+        float: right;
+        margin-right: $margin;
+    }
+
+    .nav-ul{
+        list-style-type: none;
+        .nav-li{
+            vertical-align: middle;
+            .nav-a{
+                color: $colorText;
+                text-decoration: none;
+            }
+            .nav-a:hover{
+                color: $colorHover;
+            }
+        }
+    }
+}
+
+.head{
+    text-align: center;
+    margin-bottom: $margin; 
+}
