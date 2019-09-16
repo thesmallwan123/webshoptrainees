@@ -1,3 +1,11 @@
-<p>
-  header works!
-</p>
+<nav class="nav-bar">
+  <ul class="nav-ul">
+    <li class="nav-li nav-left" *ngFor="let navItem of navItemsL"><a class="nav-a"
+        routerLink="{{navItem.url}}">{{navItem.name}}</a></li>
+    <li class="nav-li nav-right" *ngFor="let navItem of navItemsR"><a class="nav-a"
+        routerLink="{{navItem.url}}">{{navItem.name}}</a></li>
+  </ul>
+</nav>
+<div class="head">
+  welcome at {{title}} this is our beautifull website
+</div>
