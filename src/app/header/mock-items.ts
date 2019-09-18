@@ -7,5 +7,5 @@ export const ITEMSL: navItem[] = [
 ];
 
 export const ITEMSR: navItem[] = [
-    //{ name: 'login', url: '/login', side: 'right'}
+    { name: 'login', url: '/login', side: 'right'}
 ]
