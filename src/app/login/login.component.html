@@ -1,0 +1,18 @@
+<div class="MainLogin">
+    <div class="titleLogin">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="form">
+        <form>
+            <div class="Username">
+                <input type="text" name="username" id="uName" placeholder="Username please" (input)="uName=$event.target.value" />
+            </div>
+            <div class="Password">
+                <input type="password" name="password" id="pWord" placeholder="Password please" (input)="pWord=$event.target.value" />
+            </div>
+            <div class="Submit">
+                <input type="submit" name="submit" value="Submit your login" (click)="submit($event)"/>
+            </div>
+        </form>
+    </div>
+</div>
