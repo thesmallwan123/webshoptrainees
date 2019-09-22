@@ -1,6 +1,6 @@
 <section class="product">
   <div *ngFor="let product of productList">
-    <div *ngIf="product.id == displayProductId">
+    <div *ngIf="product.id == displayProductId" class="productInformation">
       <img src="{{product.image}}" alt="product photo">
       <ul>
         <li>{{product.id}}</li>
