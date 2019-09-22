@@ -1,0 +1,14 @@
+.product {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

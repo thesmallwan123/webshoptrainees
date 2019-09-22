@@ -4,16 +4,19 @@
   <div *ngFor="let product of productList" class="product-card">
     <img src="{{product.image}}" alt="productImage">
     <ul>
+      <li>{{product.id}}</li>
       <li>Name: {{product.name}}</li>
       <li>Price: {{product.price}}</li>
-      <li><a href="">More details</a></li>
+      <li>
+        <a routerLink="/product" (click)="onClick(product.id)">More details</a>
+      </li>
     </ul>
     <div *ngIf="product.inStock; then addToCart else outOfStock"></div>
-    <ng-template #addToCart>
-      <button>Add to cart</button>
-    </ng-template>
-    <ng-template #outOfStock>
-      <button disabled>Out of stock</button>
-    </ng-template>
+      <ng-template #addToCart>
+        <button>Add to cart</button>
+      </ng-template>
+      <ng-template #outOfStock>
+        <button disabled>Out of stock</button>
+      </ng-template>
   </div>
 </section>
