@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CookieService} from 'ngx-cookie-service';
+import { ProductService } from './producten/product/product.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,9 +29,13 @@ import { AdminComponent } from './admin/admin.component';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
   ],
-  providers: [CookieService],
+  providers: [
+    CookieService,
+    ProductService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
