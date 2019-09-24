@@ -14,6 +14,7 @@ import { ProductenComponent } from './producten/producten.component';
 import { ProductComponent } from './producten/product/product.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AdminComponent } from './admin/admin.component';
     ProductenComponent,
     ProductComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

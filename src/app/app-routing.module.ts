@@ -6,8 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProductenComponent } from './producten/producten.component';
-
-
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +15,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'product', component: ProductComponent },
-  { path: '**', redirectTo: '/home' },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({
